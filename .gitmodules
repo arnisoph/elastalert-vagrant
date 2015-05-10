@@ -1,0 +1,30 @@
+[submodule "shared/salt/assets/saltstack-zsh-formula"]
+	path = shared/salt/assets/saltstack-zsh-formula
+	url = https://github.com/bechtoldt/saltstack-zsh-formula
+[submodule "shared/salt/assets/saltstack-users-formula"]
+	path = shared/salt/assets/saltstack-users-formula
+	url = https://github.com/bechtoldt/saltstack-users-formula
+[submodule "shared/salt/assets/saltstack-tools-formula"]
+	path = shared/salt/assets/saltstack-tools-formula
+	url = https://github.com/bechtoldt/saltstack-tools-formula
+[submodule "shared/salt/assets/saltstack-sysctl-formula"]
+	path = shared/salt/assets/saltstack-sysctl-formula
+	url = https://github.com/bechtoldt/saltstack-sysctl-formula
+[submodule "shared/salt/assets/saltstack-salt-formula"]
+	path = shared/salt/assets/saltstack-salt-formula
+	url = https://github.com/bechtoldt/saltstack-salt-formula
+[submodule "shared/salt/assets/saltstack-repos-formula"]
+	path = shared/salt/assets/saltstack-repos-formula
+	url = https://github.com/bechtoldt/saltstack-repos-formula
+[submodule "shared/salt/assets/saltstack-java-formula"]
+	path = shared/salt/assets/saltstack-java-formula
+	url = https://github.com/bechtoldt/saltstack-java-formula
+[submodule "shared/salt/assets/saltstack-git-formula"]
+	path = shared/salt/assets/saltstack-git-formula
+	url = https://github.com/bechtoldt/saltstack-git-formula
+[submodule "shared/salt/assets/saltstack-elasticsearch-formula"]
+	path = shared/salt/assets/saltstack-elasticsearch-formula
+	url = https://github.com/bechtoldt/saltstack-elasticsearch-formula
+[submodule "shared/salt/assets/salt-modules"]
+	path = shared/salt/assets/salt-modules
+	url = https://github.com/bechtoldt/salt-modules
