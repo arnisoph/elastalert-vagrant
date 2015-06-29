@@ -44,12 +44,12 @@ java:
   lookup:
     manage:
       jdk:
-        current_ver: 8u40
+        current_ver: 8u45
         versions:
-          8u40:
-            source: file:///vagrant/shared/misc/jdk-8u40-linux-x64.tar.gz
-            source_hash: md5=3b3f74589539b8bbe5d78005e52f4f78
-            version: jdk1.8.0_40
+          8u45:
+            source: file:///vagrant/share/misc/jdk-8u45-linux-x64.tar.gz
+            source_hash: md5=1ad9a5be748fb75b31cd3bd3aa339cac
+            version: jdk1.8.0_45
 
 sysctl:
   lookup:

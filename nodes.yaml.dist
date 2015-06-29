@@ -1,7 +1,7 @@
 ---
 defaults:
   domain: elastalert.local.arnoldbechtoldt.com
-  base_box: DEV_Debian_78_salt_arbe_20152_git-virtualbox-v0.4-32-g26a68ac.box
+  base_box: DEV_Debian_78_salt_arbe_20152_git-virtualbox-v1.0.0-8-g26a68ac.box
   base_box_basedir: ../../vagrant-devenv/shared/boxes
   osfam: debian
   synced_folders:

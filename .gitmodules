@@ -34,3 +34,6 @@
 [submodule "shared/salt/assets/saltstack-kibana-formula"]
 	path = shared/salt/assets/saltstack-kibana-formula
 	url = https://github.com/bechtoldt/saltstack-kibana-formula
+[submodule "vagrant"]
+	path = vagrant
+	url = https://github.com/bechtoldt/iac-vagrant.git
