@@ -1,22 +1,37 @@
 ---
 defaults:
   domain: elastalert.local.arnoldbechtoldt.com
-  base_box: DEV_Debian_78_salt_arbe_20152_git-virtualbox-v0.4-30-gba01b54.box
+  base_box: DEV_Debian_78_salt_arbe_20152_git-virtualbox-v0.4-32-g26a68ac.box
   base_box_basedir: ../../vagrant-devenv/shared/boxes
   osfam: debian
   synced_folders:
+    # Common folders
     - src: assets/scripts/provision
       dst: /vagrant/scripts
-    - src: ../shared
-      dst: /vagrant/share
-    - src: ../shared/salt/assets/salt-modules/_modules
-      dst: /vagrant/salt/_modules
-    - src: ../shared/salt/assets/salt-modules/_states
-      dst: /vagrant/salt/_states
-    #- src: ../share/puppet/devenv
-    #  dst: /vagrant/share/puppet/devenv
+    - src: ../shared/misc
+      dst: /vagrant/shared/misc
+
+    # Salt related folders
     - src: ../shared/salt/devenv
-      dst: /vagrant/share/salt/devenv
+      dst: /vagrant/shared/salt/devenv
+    #- src: ../../github/salt
+    #  dst: /vagrant/src/salt
+    - src: ../../salt-modules/_modules
+      dst: /vagrant/salt/_modules
+    - src: ../../salt-modules/_states
+      dst: /vagrant/salt/_states
+
+    # Puppet related folders
+    #- src: ../shared/puppet
+    #  dst: /vagrant/shared/puppet
+    #- src: ../../../<project>/puppet/modules
+    #  dst: /vagrant/shared/puppet_modules_ext
+    #- src: ../../../<project>/puppet-data
+    #  dst: /vagrant/shared/puppet_hiera_ext
+
+    # Rex related folders
+    #- src: ../../github/rex
+    #  dst: /vagrant/src/rex
   provision:
     - name: basic
     - name: saltstack_install_bootstrap
@@ -28,6 +43,10 @@ defaults:
           base_dir: ../shared/salt/assets/saltstack-git-formula
         - name: java
           base_dir: ../shared/salt/assets/saltstack-java-formula
+        - name: kibana
+          base_dir: ../shared/salt/assets/saltstack-kibana-formula
+        - name: logstash
+          base_dir: ../shared/salt/assets/saltstack-logstash-formula
         - name: repos
           base_dir: ../shared/salt/assets/saltstack-repos-formula
         - name: salt

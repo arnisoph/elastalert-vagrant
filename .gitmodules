@@ -28,3 +28,9 @@
 [submodule "shared/salt/assets/salt-modules"]
 	path = shared/salt/assets/salt-modules
 	url = https://github.com/bechtoldt/salt-modules
+[submodule "shared/salt/assets/saltstack-logstash-formula"]
+	path = shared/salt/assets/saltstack-logstash-formula
+	url = https://github.com/bechtoldt/saltstack-logstash-formula
+[submodule "shared/salt/assets/saltstack-kibana-formula"]
+	path = shared/salt/assets/saltstack-kibana-formula
+	url = https://github.com/bechtoldt/saltstack-kibana-formula

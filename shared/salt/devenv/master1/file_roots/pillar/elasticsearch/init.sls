@@ -36,9 +36,6 @@ elasticsearch:
       - name: lmenezes/elasticsearch-kopf
         installed_name: kopf
 #        url: 'https://github.com/lmenezes/elasticsearch-kopf'
-      - name: karmi/elasticsearch-paramedic
-        installed_name: paramedic
-#        url: 'https://github.com/karmi/elasticsearch-paramedic'
 #    indices:
 #      lalilu: {}
 
@@ -50,7 +47,7 @@ java:
         current_ver: 8u40
         versions:
           8u40:
-            source: file:///vagrant/share/misc/jdk-8u40-linux-x64.tar.gz
+            source: file:///vagrant/shared/misc/jdk-8u40-linux-x64.tar.gz
             source_hash: md5=3b3f74589539b8bbe5d78005e52f4f78
             version: jdk1.8.0_40
 

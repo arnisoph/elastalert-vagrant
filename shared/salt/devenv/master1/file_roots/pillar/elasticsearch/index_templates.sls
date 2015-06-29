@@ -1,6 +1,34 @@
 #elasticsearch:
 #  lookup:
 #    index_templates:
+#      collectd-cpu:
+#        config:
+#          template: collectd-*
+#          mappings:
+#            collectd-cpu:
+#              properties:
+#                '@timestamp':
+#                  type: date
+#                  format: date_time
+#                plugin_instance:
+#                  type: string
+#                type_instance:
+#                  type: string
+#                plugin:
+#                  type: string
+#                '@version':
+#                  type: string
+#                host:
+#                  type: string
+#                collectd_type:
+#                  type: string
+#                type:
+#                  type: string
+#                value:
+#                  type: long
+
+
+
 #      salt_defaults:
 #        #ensure: absent
 #        config:

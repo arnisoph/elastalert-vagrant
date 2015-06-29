@@ -24,7 +24,7 @@ salt:
 
             pillar_roots:
               base:
-                - /srv/salt/pillar/share
+                - /srv/salt/pillar/shared
                 - /srv/salt/pillar/examples
 
             #module_dirs:
@@ -61,6 +61,16 @@ elasticsearch:
   index: 'salt'
   number_of_shards: 1
   number_of_replicas: 0
+
+kibana:
+  lookup:
+    instances:
+      kibana_standard:
+        current_ver: kibana-4.1.0-linux-x64
+        versions:
+          kibana-4.1.0-linux-x64:
+            source: https://download.elastic.co/kibana/kibana/kibana-4.1.0-linux-x64.tar.gz
+            source_checksum: md5=77b65888f0ab6b8fa403732b3bf9fbe5
 
 tools:
   manage:

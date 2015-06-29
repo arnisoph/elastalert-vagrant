@@ -5,5 +5,7 @@ base:
     - zsh
     - common
     - schedule
+    - logstash
+    - collectd
   'master1.*':
     - elasticsearch

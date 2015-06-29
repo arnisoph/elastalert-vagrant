@@ -12,7 +12,7 @@ file_roots:
 
 pillar_roots:
   base:
-    - /srv/salt/pillar/share
+    - /srv/salt/pillar/shared
     - /srv/salt/pillar/examples
 
 #module_dirs:
